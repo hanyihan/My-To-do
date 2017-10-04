@@ -1,0 +1,194 @@
+
+* {
+	/*box-sizing: border-box;*/
+
+}
+
+body {
+	background: #10a79a;
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+}
+
+.container {
+	max-width: 700px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 8px;
+	min-height: 304px;
+}
+
+.msg {
+	display: none;
+	text-align: center;
+	padding: 10px;
+	background: #7eaf0c;
+}
+
+.anchor {
+	cursor: pointer;
+}
+
+input,.task-item,button,.task-detail-mask,
+.task-detail .desc textarea {
+	padding: 10px;
+	border-radius: 4px;
+}
+
+input [type=text],input [type=date] {
+	border: 0;
+	display: block;
+	width: 100%;
+}
+
+
+button {
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	background: #05e29c;
+}
+
+.add-task input[type=text] {
+	width: 84%;
+	margin-right: 1%;
+	margin: 5px 0;
+	background: #10a79a;
+	border: 0;
+}
+
+.add-task input[type=text]:hover,
+.add-task input[type=text]:focus {
+	background: #fff;
+}
+
+.add-task button {
+	margin-left: 8px;
+}
+
+.add-task button:hover {
+	background: #1befb5;
+}
+
+
+.task-item {
+	margin-bottom: 2px;
+	background: #fff;
+	color: #333;
+	transition: background .1s;
+	box-shadow: 0 2px 3px rgba(0,0,0,.4);
+	margin: 2px 0;
+}
+
+.task-item:hover {
+	cursor: pointer;
+	background: #ddd;
+}
+
+.task-item.completed {
+	color: #aaa;
+	opacity: 0.6;
+}
+
+.task-item.completed:after {
+	content: " ";
+	height: 1px;
+	width: 97%;
+	float: right;
+	display: block;
+	position: relative;
+	top: -8px;
+	background: #aaa;
+}
+
+.task-content {
+	margin-left: 10px;
+}
+
+.fr {
+	float: right;
+}
+
+
+.task-detail-mask {
+	display: none;
+	position: fixed;
+	background: rgba(30,30,30,.5);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+}
+
+.task-detail {
+	display: none;
+	position: absolute;
+	background: #fff;
+	color: #333;
+	width: 50%;
+	max-height: 260px;
+	bottom: 0;
+	right: 0;
+	padding: 12px;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+}
+
+.task-detail .input_item{
+	margin-bottom: 10px;
+}
+
+.task-detail .content {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.task-detail #one {
+	width: 80%;
+}
+
+.task-detail .desc textarea {
+	width: 80%;
+	height: 100px;
+}
+
+.action {
+	color: #888;
+	font-size: 90%;
+}
+
+.action:hover {
+	color: #333;
+}
+
+
+
+video {
+	width: 0;
+	height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

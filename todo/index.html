@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My todo tip</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css">
+	<link href="https://cdn.bootcss.com/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/base.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/store.js/1.3.20/store.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
+
+</head>
+<body>
+	<div class="msg">
+		<span class="msg_content"></span>
+		<span class="anchor confirmed">知道了</span>
+	</div>
+	<!-- 总容器开始 -->
+	<div class="container">
+		<h1>我的Todo</h1>
+		<form class="add-task">
+			<input type="text" name="content"
+			autocomplete="off"
+			placeholder="eg. 下午记得想我...">
+			<button type="submit">submit</button>
+		</form>
+		<!-- 清单列表开始 -->
+		<div class="task-list">
+			<!-- 任务开始 -->
+
+			<!-- 任务结束 -->
+		</div>
+		<!-- 清单列表结束 -->
+
+		<!-- 任务详情开始 -->
+		<div class="task-detail-mask"></div>
+		<div class="task-detail">
+		</div>
+
+	</div>
+	<!-- 总容器结束 -->
+
+	<video id="alerter" src="alert.mp3"></video>
+	<script src="js/base.js"></script>
+</body>
+</html>
